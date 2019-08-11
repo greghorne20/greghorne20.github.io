@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<title>Paul Walker Fantasy Football - Season XV</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button">HOME</a>
+    <a href="#welcome" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> WELCOME</a>
+    <a href="#leaguedues" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> LEAGUE DUES</a>
+    <a href="#ruleproposals" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> RULE PROPOSALS</a>
+    <a href="https://fantasy.espn.com/football/league?leagueId=69673" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> LEAGUE</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+      <i class="fa fa-search"></i>
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#welcome" class="w3-bar-item w3-button" onclick="toggleFunction()">WELCOME</a>
+    <a href="#leaguedues" class="w3-bar-item w3-button" onclick="toggleFunction()">LEAGUE DUES</a>
+    <a href="#ruleproposals" class="w3-bar-item w3-button" onclick="toggleFunction()">RULE PROPOSALS</a>
+    <a href="https://fantasy.espn.com/football/league?leagueId=69673" class="w3-bar-item w3-button" onclick="toggleFunction()">LEAGUE</a>
+    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">FANTASY FOOTBALL - 2019</span>
+  </div>
+</div>
+
+<!-- Container (Welcome Section) -->
+<div class="w3-content w3-container w3-padding-64" id="welcome">
+  <h3 class="w3-center">WELCOME TO SEASON XV</h3>
+  <p></p>
+  <div class="w3-row">
+    <p>The annual mailings peaked with the wedding invitations and this way I
+       didn't have to buy stamps. This year everyone can vote below and ahead of time on
+        rule changes.</p>
+    <p>[Imagine some slightly inappropriate, but hilarious jokes that I might not
+       wanted linked online to my actual name or github account. At least one of the jokes is about Tommy.]</p>
+    <p>Pat is hosting again this year. Plan to arrive at 1 pm for draft order selection and keepers. The draft
+      will start promptly at 2 p.m. to accommodate our celebrated champion and his many fantasy football responsibilities.
+      If you are not there for your picks, we will choose Chicago Bears kickers for you.
+    </p>
+  </div>
+</div>
+
+<!-- Second Parallax Image with Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">LEAGUE DUES</span>
+  </div>
+</div>
+
+<!-- Container (League Dues) -->
+<div class="w3-content w3-container w3-padding-64" id="leaguedues">
+  <!-- League Dues table-->
+    <div id="duescontainer">
+      <table id="duestable">
+        <thead>
+          <tr>
+            <th>Team</th>
+            <th>Fee</th>
+            <th>Fines (See rules)</th>
+            <th>Amount Paid</th>
+            <th>Balance</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Crusaders</td>
+            <td>TBD</td>
+            <td>$0</td>
+            <td>$0</td>
+            <td>TBD</td>
+          </tr>
+          <tr>
+            <td>Crackers</td>
+            <td>TBD</td>
+            <td>$0</td>
+            <td>$0</td>
+            <td>TBD</td>
+          </tr>
+          <tr>
+            <td>monSTARS</td>
+            <td>TBD</td>
+            <td>$0</td>
+            <td>$0</td>
+            <td>TBD</td>
+          </tr>
+          <tr>
+            <td>Street Fighters</td>
+            <td>TBD</td>
+            <td>$0</td>
+            <td>$0</td>
+            <td>TBD</td>
+          </tr>
+          <tr>
+            <td>Hulkamaniacs</td>
+            <td>TBD</td>
+            <td>$0</td>
+            <td>$0</td>
+            <td>TBD</td>
+          </tr>
+          <tr>
+            <td>Hall</td>
+            <td>TBD</td>
+            <td>$0</td>
+            <td>$0</td>
+            <td>TBD</td>
+          </tr>
+          <tr>
+            <td>Uncle Bill</td>
+            <td>TBD</td>
+            <td>$0</td>
+            <td>$0</td>
+            <td>TBD</td>
+          </tr>
+          <tr>
+            <td>Bareback Barback</td>
+            <td>TBD</td>
+            <td>$0</td>
+            <td>$0</td>
+            <td>TBD</td>
+          </tr>
+          <tr>
+            <td>Waiver Wire</td>
+            <td>TBD</td>
+            <td>$0</td>
+            <td>$0</td>
+            <td>TBD</td>
+          </tr>
+          <tr>
+            <td>Farmer Fran</td>
+            <td>TBD</td>
+            <td>$0</td>
+            <td>$0</td>
+            <td>TBD</td>
+          </tr>
+          <tr>
+            <td>Afternoon Delights</td>
+            <td>TBD</td>
+            <td>$0</td>
+            <td>$0</td>
+            <td>TBD</td>
+          </tr>
+          <tr>
+            <td>Bubba</td>
+            <td>TBD</td>
+            <td>$0</td>
+            <td>$0</td>
+            <td>TBD</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+</div>
+
+<!-- Third Parallax Image with Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide">RULE CHANGE PROPOSALS</span>
+  </div>
+</div>
+
+<h2 class="w3-center">Only respond once per rule. Put your name or team name.</h2>
+<h3 class="w3-center">Polls close once a winning choice is determined.</h3>
+<p class="w3-center">Don't put someone else's name. I could make it so you have to log in but not everyone has a google account.</p>
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" id="ruleproposals">
+  <h3 class="w3-center">DRAFT ORDER BEFORE KEEPER SELECTIONS</h3>
+  <p>When we approved adding a keeper at last year's draft,
+    it was stated that the each team's keeper would be selected before the draft
+    order was determined. This proposes changing the order of those two events.
+    The draft order would be determined before keepers are selected.</p>
+
+<div class="w3-center">
+  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe9vgQFKHUadlxH7eq2UACVZx0YOuD2s8w2rd3nNf9tpf54Vw/viewform?embedded=true" width="640" height="700" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+</div>
+
+  <h3 class="w3-center">FINES FOR STARTING INACTIVE PLAYERS</h3>
+  <p>Some owners who were essentially out of the playoff race
+    have neglected to set their lineups.  This can hurt potential playoff teams
+    by giving competing potential playoff teams easier wins. Here are some examples from last
+    of teams which left inactive players in:</p>
+  <ul>
+    <li>Week 15 - Tommy started Carson Wentz, who was injured and did not play.</li>
+    <li>Week 12 - Tommy started Ryan Fitzpatrick, who did not play. It was
+      reported on the Tuesday of that week that Winston would start.</li>
+    <li>Week 10 - Tommy started the Texans D/ST. The Texans had a bye week.</li>
+    <li>Week 8 - Tommy left his tight end postion empty. Jared Cook scored 15.4 on the bench.</li>
+    <li>Week 4 - Tommy started Corey Clement, who was declared inactive 90 minutes before kickoff.</li>
+    <li>Week 4 - Tommy left his kicker position empty.</li>
+  </ul>
+  <p>This rule proposes that any team owner which leaves a starting slot empty
+    or with a player who has been declared inactive will incur a $10 fine for each postion
+    (e.g. Tommy would have 2 fines in Week 4). If a player does
+    not play, but was one of the 46 active players, there is no violation. </p>
+  <p>At the end of the season, the team with the most points against will get the fine pool.</p>
+
+<div class="w3-center">
+  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfoYKJxnI0ZyVqVnku29ocOnGPrdo_GgdvAMfEcWxTFIuxrDw/viewform?embedded=true" width="640" height="700" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+</div>
+
+  <h3 class="w3-center">CHANGE TO LEAGUE DUES</h3>
+  <p>Based on the current league rules, the league fee would increase by
+    $5 to $65 this year. This rule change proposes changing the league fee.  Voting will be done via
+    an <a href="https://en.wikipedia.org/wiki/Instant-runoff_voting">Instant Runoff</a>. That means you need
+    to rank all of the choices by your preference. </p>
+  <ul>
+    <li>A: No change - $65 with a $5 increase each year.</li>
+    <li>B: $70 - Change the increase to $10 each year.</li>
+    <li>C: $75 - Eliminate the automatic increase.</li>
+    <li>D: $100 - Eliminate the automatic increase.</li>
+  </ul>
+
+<div class="w3-center">
+  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScyTg--4BIRHAVskQpp0Zp17cn2fpnavq95BYv1SAGCX4RoCA/viewform?embedded=true" width="640" height="910" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+</div>
+
+  <h3 class="w3-center">TRADE VETOES</h3>
+  <p>Currently, only cleary unfair trades are subject to veto soley at the
+    commisioner's discretion. This is intended for anti-competitive trades only.
+    Allowing a simple majority to veto a trade is stupid. Then it would make sense for every team to
+    veto most trades to benefit their own interests. Therefore, this rule proposes adding a veto vote that
+    requires a supermajority to reverse clearly unfair trades. After two teams make a trade, another team can
+    call for a veto vote. At least 65% of the uninvolved teams must vote to veto for the trade to be reversed.
+    (e.g. 7 out of 10 for typical 2 team trades; 6 of 9 for 3 team trades; 6 of 8 for 4 team trades; etc.)</p>
+
+  <p >Or we can stick with the current system. (<i>The LORD is good and does what is right; he shows the proper path to those who go astray.
+    [<a href="https://dailyverses.net/psalms/25/8-9/kjv">Psalms 25:8</a>]</i>)</p>
+
+  <p>This proposal is the result of whining after a Crusaders trade last year.</p>
+
+<div class="w3-center">
+  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfpNvQS74luX7ASHceGifAg7g_Ic9P18tX4S-KtwIWKs94QNw/viewform?embedded=true" width="640" height="700" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+</div>
+
+  <h3 class="w3-center">SUBMIT ANY OTHER PROPOSALS VIA TEXT</h3>
+  <p><em>Text the group or your least favorite commisioner. They'll be added here.</em></p>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>
