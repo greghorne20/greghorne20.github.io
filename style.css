@@ -50,6 +50,7 @@ body, html {
 table {
   margin-left: auto;
   margin-right: auto;
+  width: auto;
 }
 
 tr:hover {
