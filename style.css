@@ -44,6 +44,7 @@ body, html {
 
 .duescontainer {
   align-self: center;
+  overflow-x: scroll;
 }
 
 table {
