@@ -13,11 +13,11 @@ body, html {
   background-size: cover;
 }
 
-.centerimg {
+.chartimg {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: auto;
+  width: 100%;
 }
 
 /* First image (Logo. Full height) */
