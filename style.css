@@ -13,6 +13,13 @@ body, html {
   background-size: cover;
 }
 
+.centerimg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+}
+
 /* First image (Logo. Full height) */
 .bgimg-1 {
   background-image: url('./images/paul.jpg');
