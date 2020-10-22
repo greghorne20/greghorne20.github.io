@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<title>Season XVI</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Force hard refresh -->
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);"
+      onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="paulwalker.html#home" class="w3-bar-item w3-button">HOME</a>
+    <a href="paulwalker.html#covid" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-quote-left"></i>
+      COVID-19</a>
+    <a href="paulwalker.html#leaguedues" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-dollar"></i> DUES
+      AND PRIZES</a>
+    <a href="102220_league_note.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-newspaper-o"></i>
+      LEAGUE NEWS</a>
+    <a href="draftboard.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> DRAFT BOARD</a>
+    <a href="https://fantasy.espn.com/football/league?leagueId=69673" class="w3-bar-item w3-button w3-hide-small"><i
+        class="fa fa-external-link"></i> LEAGUE</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="paulwalker.html#welcome" class="w3-bar-item w3-button" onclick="toggleFunction()">COVID-19</a>
+    <a href="paulwalker.html#leaguedues" class="w3-bar-item w3-button" onclick="toggleFunction()">DUES AND PRIZES</a>
+    <a href="102220_league_note.html" class="w3-bar-item w3-button" onclick="toggleFunction()">LEAGUE NEWS</a>
+    <a href="draftboard.html" class="w3-bar-item w3-button" onclick="toggleFunction()">DRAFT BOARD</a>
+    <a href="https://fantasy.espn.com/football/league?leagueId=69673" class="w3-bar-item w3-button"
+      onclick="toggleFunction()">LEAGUE</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">OCT 18 2020</span>
+  </div>
+</div>
+
+<div class="w3-content w3-container w3-padding-64" id="news">
+  <h3 class="w3-center">Worst Beats First</h3>
+  <div class="w3-row">
+      <center><a href="images/102220_playoffodds.JPG"><img src="images/102220_playoffodds.JPG" /></a></center>
+    <p>
+        The 5-0 Team Uncle Bill fell to the 0-5 Street Fighters. The Street Fighters managed to start 8 players who actually played this week, but managed
+        to get zeroes out of 2 starting slots, AND STILL WON over the sole undefeated team.  This was such an improbable victory that the FBI launched an investigation on Iran 
+        fantasy interference. Rudy Giuliani is asking questions with one hand visible. Hunter Biden has relapsed. Don Jr. was his hookup.  (This is what happens when
+        I start the league note at 7:30 on an Eagles Thursday night game.)
+    </p>  
+
+    <p> 
+        The Crusaders are now the 6th unique team to win the High Score prize in as many weeks. By the end of the season, everyone is just going to get their $100 back.
+        The Crusaders came within a point of breaking the Cracker's recent all-time high, but the Crusaders are stuck with 2nd all-time, thanks to an early in-game injury
+        to their tight end. It turns out Julio Jones is good when he plays. No Bad Beat was hit this week.
+    </p>
+    <p>
+      Team Uncle Bill's loss brought his playoff probability down, but they're still above 96%. The Crusaders' forecast nearly doubled. That's due more to their scoring
+      outbreak affecting their predicted winning percentage than to the win itself. Team America fell quite a bit, and the Ed Horne Football team got bumped up over 50%.  Hall 
+      and the Crackers are still the favorites to secure the 2nd and 3rd spots, but 7 teams are strong playoff contenders. Fran, Hulk, Delights, Barback, and Street Fighters are 
+      clinging to life. Someone get them some Remdesivir!
+    </p>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+</footer>
+
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>
