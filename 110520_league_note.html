@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<title>Season XVI</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Force hard refresh -->
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);"
+      onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="paulwalker.html#home" class="w3-bar-item w3-button">HOME</a>
+    <a href="paulwalker.html#covid" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-quote-left"></i>
+      COVID-19</a>
+    <a href="paulwalker.html#leaguedues" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-dollar"></i> DUES
+      AND PRIZES</a>
+    <a href="110520_league_note.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-newspaper-o"></i>
+      LEAGUE NEWS</a>
+    <a href="draftboard.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> DRAFT BOARD</a>
+    <a href="https://fantasy.espn.com/football/league?leagueId=69673" class="w3-bar-item w3-button w3-hide-small"><i
+        class="fa fa-external-link"></i> LEAGUE</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="paulwalker.html#welcome" class="w3-bar-item w3-button" onclick="toggleFunction()">COVID-19</a>
+    <a href="paulwalker.html#leaguedues" class="w3-bar-item w3-button" onclick="toggleFunction()">DUES AND PRIZES</a>
+    <a href="110520_league_note.html" class="w3-bar-item w3-button" onclick="toggleFunction()">LEAGUE NEWS</a>
+    <a href="draftboard.html" class="w3-bar-item w3-button" onclick="toggleFunction()">DRAFT BOARD</a>
+    <a href="https://fantasy.espn.com/football/league?leagueId=69673" class="w3-bar-item w3-button"
+      onclick="toggleFunction()">LEAGUE</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">NOV 05 2020</span>
+  </div>
+</div>
+
+<div class="w3-content w3-container w3-padding-64" id="news">
+  <h3 class="w3-center">Week 9</h3>
+  <div class="w3-row">
+      <center><a href="images/110520_playoffodds.JPG"><img src="images/110520_playoffodds.JPG" /></a></center>
+    <p>
+        We are 8 weeks into the season and there have been 8 different teams with the high score of the week. That's a bit unexpected.
+        At 7-1 and with a solid lead in points, Team Uncle Bill has nearly locked up 1st place.  Barksdale's Waiver Wire had an important
+        win over the Crusaders to make them the favorite for 2nd place. The Ed Horne Football Team had a very impressive win over Hall, winning
+        62.0 to 61.06.  Both of those teams are more likely than the Crusaders to make the playoffs. The Crackers were right up there with them,
+        at 60.16 points in a loss to the Cracker Sr. The Crackers are also more likely to make the playoffs than the Crusaders. 
+    </p>  
+
+    <p> 
+        Team America jumped from 11% to 25% to make the playoffs with a win over the Street Fighters in which they scored over 100. The Crusaders,
+        second in total points for the season are down to a 39% chance of making the playoffs, and that's with an expected win rate of 67% over
+        the average competition and 2 of their final 3 games against the 11th and 12th placed teams. If the Crusaders miss the playoffs, they 
+        are expected to refuse to accept the results, use their power as commisioner to spread misinformation, sue everyone for anything, and
+        rant about the rampant fantasy fraud that took place. Stop counting the scores!  Or count all the scores, I'm not sure. 
+    </p>
+    <p>
+        Barback Bareback and the Hulkamaniacs still have a very outside shot at the playoffs. The Delights are toast.  The reigning champion Farmer Fran
+        sucks. And the Street Fighters are awful.
+    </p>
+    <p>
+        The league office HQ is in a transitionary phase, having moved into a temporary location, but expect to move into new fancier offices in time for the 
+        playoffs. No bad beat this week; The pool is up to $75 for week 9.
+    </p>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+</footer>
+
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>
