@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<title>Season XVI</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Force hard refresh -->
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);"
+      onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="paulwalker.html#home" class="w3-bar-item w3-button">HOME</a>
+    <a href="paulwalker.html#covid" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-quote-left"></i>
+      COVID-19</a>
+    <a href="paulwalker.html#leaguedues" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-dollar"></i> DUES
+      AND PRIZES</a>
+    <a href="111120_league_note.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-newspaper-o"></i>
+      LEAGUE NEWS</a>
+    <a href="draftboard.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> DRAFT BOARD</a>
+    <a href="https://fantasy.espn.com/football/league?leagueId=69673" class="w3-bar-item w3-button w3-hide-small"><i
+        class="fa fa-external-link"></i> LEAGUE</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="paulwalker.html#welcome" class="w3-bar-item w3-button" onclick="toggleFunction()">COVID-19</a>
+    <a href="paulwalker.html#leaguedues" class="w3-bar-item w3-button" onclick="toggleFunction()">DUES AND PRIZES</a>
+    <a href="111120_league_note.html" class="w3-bar-item w3-button" onclick="toggleFunction()">LEAGUE NEWS</a>
+    <a href="draftboard.html" class="w3-bar-item w3-button" onclick="toggleFunction()">DRAFT BOARD</a>
+    <a href="https://fantasy.espn.com/football/league?leagueId=69673" class="w3-bar-item w3-button"
+      onclick="toggleFunction()">LEAGUE</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">NOV 11 2020</span>
+  </div>
+</div>
+
+<div class="w3-content w3-container w3-padding-64" id="news">
+  <h3 class="w3-center">Week 9</h3>
+  <div class="w3-row">
+      <center><a href="images/111120_playoffodds.JPG"><img src="images/111120_playoffodds.JPG" /></a></center>
+    <p>
+        Team Uncle Bill has virtually clinched a top 2 spot and Waiver Wire has nearly clinched a playoff berth.  Behind them,
+        Hall and the Crackers are the overwhelming favorites to make the playoffs, but are not locked in. Win out and they are in.
+    </p>  
+    <p>
+        The Ed Horne Football Team is against the ropes, likely needing to win out to get in. Their most straightforward path to the playoffs is
+        to win out, including the Week 11 game against the Crackers. They're in a tight race with the Crackers in the points tiebreaker (Crackers currently lead
+        by 28) and would make up some of that ground in a win against them. Hall is slightly farther ahead (46 points), but can
+        be caught by EFT in a few different scenarios.  There's a lot of uncertainty remaining in the possible outcomes for EFT. 
+    </p>
+    <p>
+        Team America is in a very tough spot. Thanks to their deficit in the points tiebreaker, they're essentially 2 games back of Hall
+        and the Crackers, and 1 game back of EFT.  They are OUT with a loss this week and an EFT win.
+    </p>
+    <p>
+        The Crusaders (2nd in points on the season), are in better position than Team America, but need some help. They will need to
+        beat the Street Fighters (2-7) this week and lame-duck champion Farmer Fran (3-6) in Week 11.  Assuming those
+        two things happen, the Crusader's playoff chances forecast jumps to 26%. Then the Crusaders need either Hall or the 
+        Crackers to lose out, EFT to lose at least one, and Team America to lose at least one. (Or both Hall and Crackers lose out,
+        and one of EFT/America to lose at least one.  Hall faces the tougher remaining schedule of the two 6-win teams (according to 
+        the forecast).
+    </p>
+    <p>
+        The five remaining teams have been eliminated, but are suing ESPN, the NFL, the fantasy league, Obama, and PETA, hoping to 
+        get the previous game's scores recounted or something.
+    </p>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+</footer>
+
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>
