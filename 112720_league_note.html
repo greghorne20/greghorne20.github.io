@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<title>Season XVI</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Force hard refresh -->
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);"
+      onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="paulwalker.html#home" class="w3-bar-item w3-button">HOME</a>
+    <a href="paulwalker.html#covid" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-quote-left"></i>
+      COVID-19</a>
+    <a href="paulwalker.html#leaguedues" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-dollar"></i> DUES
+      AND PRIZES</a>
+    <a href="112720_league_note.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-newspaper-o"></i>
+      LEAGUE NEWS</a>
+    <a href="draftboard.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> DRAFT BOARD</a>
+    <a href="https://fantasy.espn.com/football/league?leagueId=69673" class="w3-bar-item w3-button w3-hide-small"><i
+        class="fa fa-external-link"></i> LEAGUE</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="paulwalker.html#welcome" class="w3-bar-item w3-button" onclick="toggleFunction()">COVID-19</a>
+    <a href="paulwalker.html#leaguedues" class="w3-bar-item w3-button" onclick="toggleFunction()">DUES AND PRIZES</a>
+    <a href="112720_league_note.html" class="w3-bar-item w3-button" onclick="toggleFunction()">LEAGUE NEWS</a>
+    <a href="draftboard.html" class="w3-bar-item w3-button" onclick="toggleFunction()">DRAFT BOARD</a>
+    <a href="https://fantasy.espn.com/football/league?leagueId=69673" class="w3-bar-item w3-button"
+      onclick="toggleFunction()">LEAGUE</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">NOV 27 2020</span>
+  </div>
+</div>
+
+<div class="w3-content w3-container w3-padding-64" id="news">
+  <h3 class="w3-center">Wrapping up the weekly awards</h3>
+  <div class="w3-row">
+    <p>
+        Ed Horne Football Team won the final weekly high score prize, their second of the year. No one hit the bad beat, which means
+        that $105 will be put in the winner/runner-up pool. It was a bad week for the Hulkamanaics, who started Drew Brees (OUT), David Johnson (OUT),
+        Evan Engran (BYE), and the 49ers (BYE).  (Prater had 0, but played).  The Tommy Rule was put in place to fix an issue with teams not setting their lineups 
+        once they were out of playoff contention, and it was effective last year.  The money (which was supposed to be in the range of $0-30) is awarded to the team
+        with the most points against. It would be unfair to that team for me to not enforce the Tommy rule, which was passed with a league-wide vote. There haven't been
+        any complaints, but since there are so many fines this year I want to make it clear that by enforcing the fines, I'm not being a meter maid giving parking tickets. My non-enforcement of 
+        the fines would lead to a team not getting the money they are rightfully owed. Because the rule is clearly not effective, we can consider changes before next season starts. Afternoon Delights wins
+        $120 in Tommy fines because of their shitty fantasy defense giving up the most points.
+    </p>  
+    <h3 class="w3-center">Weekly Awards/Fines Net Totals</h3>
+    <div class="w3-center" id="duesContainer">
+        <div class="row">
+            <div class="columnHeader">Team</div>
+            <div class="columnHeader">Balance</div>
+        </div>
+        <div class="row">
+            <div class="cell">Crusaders</div>
+            <div class="cell">$40</div>
+        </div>
+        <div class="row">
+            <div class="cell">Crackers</div>
+            <div class="cell">$40</div>
+        </div>
+        <div class="row">
+            <div class="cell">Ed Horne Football Team</div>
+            <div class="cell">$70</div>
+        </div>
+        <div class="row">
+            <div class="cell">Street Fighters</div>
+            <div class="cell"><b>$-20</b> (owes $100 league dues also)</div>
+        </div>
+        <div class="row">
+            <div class="cell">Hulkamaniacs</div>
+            <div class="cell"><b>$-60</b></div>
+        </div>
+        <div class="row">
+            <div class="cell">Hall</div>
+            <div class="cell">$40</div>
+        </div>
+        <div class="row">
+            <div class="cell">Uncle Bill</div>
+            <div class="cell">$40</div>
+        </div>
+        <div class="row">
+            <div class="cell">Bareback Barback</div>
+            <div class="cell">$20</div>
+        </div>
+        <div class="row">
+            <div class="cell">Waiver Wire</div>
+            <div class="cell">$80</div>
+        </div>
+        <div class="row">
+            <div class="cell">Former Champion Farmer Fran</div>
+            <div class="cell">$15</div>
+        </div>
+        <div class="row">
+            <div class="cell">Afternoon Delights</div>
+            <div class="cell">$125</div>
+        </div>
+        <div class="row">
+            <div class="cell">Bubba</div>
+            <div class="cell"><b>$-10</b></div>
+        </div>
+    </div>
+    <p>
+        With the leftover bad beat prize, that leaves the prize pool at $700, to be split 75% to the champion and 25% to the runner up, or $525 and $175 (Teams can agree to alternatives before the championship).
+    </p>
+
+    <h3>Playoff Reminders</h3>
+    <p>
+        With our 11-week abbreviated season, the playoffs round 1 is held Week 12.  And because the NFL's Week 13 has BYEs, the fantasy championship is Week 14. There are no fantasy games in Week 13. 
+    </p>
+    <p>
+        Because of the limitations of the ESPN fantasy platform, the playoffs have been set up as 2-week rounds as a hacky solution to hold playoffs Week 12 and Week 14. Fantasy points from Weeks 13 and 15 will be manually zeroed out after the fact. 
+        What I'm saying is to ignore that the website says this playoff round includes Week 13. 
+    </p>
+    <h3>Ravens-Steelers</h3>
+    <p>
+        The Ravens-Steelers game originally scheduled for Thanksgiving has been moved to Tuesday at 8 pm, but could be moved even later. The game will only count for this fantasy week if it is played by Wednedsay December 5. The emergency retroactive substitutions 
+        rule will be in effect for this game in case it is changed again (If it's changed again before 11 am on Sunday, I'll send out an update). If a Ravens or Steelers player is starting, teams should have an eligible player on the bench who can fill in case the game is
+        canceled late. Team Uncle Bill and the Ed Horne Football Team both have Ravens or Steelers players currently starting.
+        Team Uncle Bill currently does not have an elgible backup K for Justin Tucker. Ed Horne Football has an eligible bench defense backing up the Ravens D/ST. Their TE situation is tougher. 
+    </p>
+    <p>
+        <b>No relief is given if the game is played but a player is ruled out because of injury.</b> That means if Mark Andrews is left in as starter, and the game is played, but Mark
+        Andrews is out because of injury, there's no retroactive substitution (but they could pick up a TE from that game since Andrews would be IR-eligible at least 90 min before kickoff).
+        Additionally, backup Tyler Higbee is questionable. If he doesn't play, and the Ravens game is cancelled, there's currently no other eligible replacement on the roster, and EFT should consider adding one. 
+    </p>
+    <p>
+        Both of the affected teams have players who can moved to an IR slot, so there's no reason to not pick up an eligible backup.  <a href="2020_Covid19_Amendments.pdf">Read this</a> under <i>Emergency Retroactive Substitutions</i> for the full rules, as 
+        determined before the season began. 
+    </p>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+</footer>
+
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>
